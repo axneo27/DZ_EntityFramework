@@ -10,7 +10,7 @@ namespace dz2 {
         public DbSet<StudentsCourses> StudentsCourses { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            string connectionString = "workstation id=testDB12345.mssql.somee.com;packet size=4096;user id=axneo27_SQLLogin_1;pwd=qwertyqwerty;data source=testDB12345.mssql.somee.com;persist security info=False;initial catalog=testDB12345;TrustServerCertificate=True";
+            string connectionString = ""; // beleive me i have one
             optionsBuilder.UseSqlServer(connectionString);
             base.OnConfiguring(optionsBuilder);
         }
